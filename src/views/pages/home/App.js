@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <GeneralMenu />
       <div>
-        <h1>Cardapio</h1>
+        {/* <h1>Cardapio</h1> */}
         {lanches.lista.map((lanche, index) => {
           return <Card key={index} title={lanche.title} photo={fotos[index]} description={lanche.description} price={lanche.price} id={lanche.id}/>
         })}

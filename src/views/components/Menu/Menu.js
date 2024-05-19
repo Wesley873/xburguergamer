@@ -51,8 +51,8 @@ export default function GeneralMenu() {
                 <div className='logo'>
                     <Link to='/'>
                         <img src={logoOifical} alt='icon-lunch' className='icon' />
-                        {/* <h1>X-GAMER</h1> */}
-                        <img src={logoGamer2} alt='icon-lunch' className='icon-gamer' />
+                        <h1>GAMER</h1>
+                        {/* <img src={logoGamer2} alt='icon-lunch' className='icon-gamer' /> */}
                     </Link>
                 </div>
                 <div className='menu'>
