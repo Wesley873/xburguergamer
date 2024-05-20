@@ -5,21 +5,20 @@ import iconHome from '../../icons/home.png';
 import iconSearch from '../../icons/search.png';
 import iconSell from '../../icons/sell.png';
 import iconOrder from '../../icons/order.png';
-import iconLunch from '../../icons/lunch.png';
 import iconMenu from '../../icons/menu.png';
 import iconPerson from '../../icons/manage_accounts.png';
 import iconConfig from '../../icons/setting.png';
 import iconAddCart from '../../icons/add_card.png';
 import iconClose from '../../icons/close.png';
 import logoOifical from '../../images/logo-oficial-90x90.png'
-import logoGamer from '../../images/gamer-90x240.png'
-import logoGamer2 from '../../images/gamer.png'
+
 
 export default function GeneralMenu() {
 
     document.addEventListener('click', function (e) {
-        if (e.target.id === 'menu') { activeSidebar() };
-        if (e.target.id !== 'menu') { closeSidebar() }
+        // console.log(e.target.id);
+        // if (e.target.id === 'menu') { activeSidebar() };
+        // if (e.target.id !== 'menu') { closeSidebar() }
     })
 
     function activeSidebar() {
@@ -37,14 +36,14 @@ export default function GeneralMenu() {
             <div className='sidebar'>
                 <div className='sidebar-header'>
                     <h3>Menu</h3>
-                    <img id="icon-person" className="icon" src={iconClose} alt='icone-home' />
+                    <img id="icon-person" className="icon" src={iconClose} alt='icone-home' onClick={closeSidebar}/>
                     {/* <h3>X</h3> */}
                 </div>
                 <div className='sidebar-body'>
-                    <div className='list'><Link to='/'><img id="icon-person" className="icon" src={iconPerson} alt='icone-home' />Meus dados</Link></div>
-                    <div className='list'><Link to='/ofertas'><img id="icon-home" className="icon" src={iconAddCart} alt='icone-home' />Formas de Pagamento</Link></div>
-                    <div className='list'><Link to='/pedido'><img id="icon-home" className="icon" src={iconOrder} alt='icone-home' />link 4</Link></div>
-                    <div className='list'><Link to='/buscar'><img id="icon-home" className="icon" src={iconConfig} alt='icone-home' />configurações</Link></div>
+                    <div className='list'><Link to='/meusdados'><img id="icon-person" className="icon" src={iconPerson} alt='icone-home' />Meus dados</Link></div>
+                    <div className='list'><Link to='/formaspagamento'><img id="icon-home" className="icon" src={iconAddCart} alt='icone-home' />Formas de Pagamento</Link></div>
+                    <div className='list'><Link to='/historico'><img id="icon-home" className="icon" src={iconOrder} alt='icone-home' />Histórico de pedidos</Link></div>
+                    <div className='list'><Link to='/configuracoes'><img id="icon-home" className="icon" src={iconConfig} alt='icone-home' />configurações</Link></div>
                 </div>
             </div>
             <nav className='topbar'>
@@ -56,7 +55,7 @@ export default function GeneralMenu() {
                     </Link>
                 </div>
                 <div className='menu'>
-                    <img src={iconMenu} alt='icon-menu' className='icon' id="menu" />
+                    <img src={iconMenu} alt='icon-menu' className='icon' id="menu" onClick={activeSidebar}/>
                 </div>
             </nav>
             

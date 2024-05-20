@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Card({title, photo, description, price, id}) {
     return (
-        <Link to={`/${id}`}>
+        <Link to={`/detalhes/${id}`}>
         <div className='card'>
             <div className='card-header'>
                 <h3>{title}</h3>
