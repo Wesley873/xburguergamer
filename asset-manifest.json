@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.07a2b4bd.css",
+    "main.js": "/static/js/main.07e9d946.js",
+    "static/media/streetfigherchicken.png": "/static/media/streetfigherchicken.af8cfb39fed5e8be3bed.png",
+    "static/media/xburguergamer.png": "/static/media/xburguergamer.e8d3af856c0b0143244b.png",
+    "static/media/lanche3.jpeg": "/static/media/lanche3.6e7338c882fb06970944.jpeg",
+    "index.html": "/index.html",
+    "main.07a2b4bd.css.map": "/static/css/main.07a2b4bd.css.map",
+    "main.07e9d946.js.map": "/static/js/main.07e9d946.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07a2b4bd.css",
+    "static/js/main.07e9d946.js"
+  ]
+}
